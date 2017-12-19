@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.graphicMethods.SetEdgesController">
+   <children>
+      <AnchorPane prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="labelHeader" alignment="CENTER" layoutX="141.0" layoutY="6.0" minHeight="30.0" prefHeight="30.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="labelXTo" layoutX="177.0" layoutY="6.0" text="x to" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="120.0" />
+            <Label fx:id="labelXFrom" layoutX="27.0" layoutY="7.0" text="x from" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" />
+            <TextField fx:id="textFieldXFrom" layoutX="50.0" layoutY="4.0" prefWidth="90.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="50.0" />
+            <TextField fx:id="textFieldXTo" layoutX="220.0" layoutY="4.0" prefWidth="90.0" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="30.0" prefHeight="40.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="textFieldYFrom" layoutX="53.0" layoutY="14.0" prefHeight="25.0" prefWidth="90.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="50.0" />
+            <Label fx:id="labelYFrom" layoutX="11.0" layoutY="12.0" text="y from" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" />
+            <Label fx:id="labelYTo" layoutX="155.0" layoutY="18.0" text="y to" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="120.0" />
+            <TextField fx:id="textFieldYTo" layoutX="220.0" layoutY="8.0" prefWidth="90.0" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="30.0" prefHeight="30.0" prefWidth="310.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="buttonOk" defaultButton="true" layoutX="167.0" layoutY="34.0" mnemonicParsing="false" onAction="#action_buttonOk" prefWidth="80.0" text="ok" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="60.0" />
+            <Button fx:id="buttonCancel" cancelButton="true" layoutX="64.0" layoutY="34.0" mnemonicParsing="false" onAction="#action_buttonCancel" prefHeight="25.0" prefWidth="80.0" text="cancel" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="60.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
